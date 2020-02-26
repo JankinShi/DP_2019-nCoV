@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>新冠肺炎实时数据展示</title>
+    <script src="{{ url_for('static', filename='echarts.js') }}"></script>
+    <script src="{{ url_for('static', filename='china.js') }}"></script>
+{#<script type="text/javascript" src="china.js"></script>#}
+{#    <script type="text/javascript" src="../static/echarts.min.js"></script>#}
+</head>
+
+<body>
+    <div class="main" style="height: 1200px; width: 1000px">
+        <div  id="bar" style="height: 600px; width: 500px"></div>
+        <div  id="pie" style="height: 600px; width: 400px"></div>
+        <div  id="map" style="height: 600px; width: 700px"></div>
+        <div  id="dateTime"></div>
+    </div>
+
+
+
+    <script type="text/javascript">
+
+        Date.prototype.format = function (fmt) {
+            var o = {
+                "y+": this.getFullYear, //年
+                "M+": this.getMonth() + 1, //月份
+                "d+": this.getDate(), //日
+                "h+": this.getHours(), //小时
+                "m+": this.getMinutes(), //分
+                "s+": this.getSeconds() //秒
+            };
+            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+        }
+        setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy-MM-dd hh:mm:ss');", 1000);
+
+
+    var barchart = echarts.init(document.getElementById("bar"));  // 初始化 echarts 并定位到画布
+    var map = echarts.init(document.getElementById("map"));  // 初始化 echarts 并定位到画布
+    var pie = echarts.init(document.getElementById("pie"));  // 初始化 echarts 并定位到画布
+
+
+    option_bar = {
+    tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+            type: 'shadow'
+        }
+    },
+    title: {
+    text: '世界各国新冠肺炎确诊例数（实时）',
+    subtext: 'written by jankin',
+    x:'center'
+    },
+    grid: {
+        left: '5%',
+        top:'10%',
+        right: '5%',
+        bottom: '10%',
+        containLabel: true
+    },
+    xAxis: [{
+    type: 'category',
+    {#data: ['湖北', '广东', '浙江', '河南', '湖南'],#}
+    data: [ {% for p in regionName %}'{{ p }}', {% endfor %}],
+    axisLine: {
+        show: true,
+     lineStyle: {
+            color: "#d5110d",
+            width: 1,
+            type: "solid"
+        },
+    },
+
+    axisTick: {
+        show: false
+    },
+    axisLabel:  {
+            interval: 0,
+            rotate:37,
+            show: true,
+            splitNumber: 15,
+            textStyle: {
+                 color: "#d5110d",
+                fontSize: '12',
+            },
+        },
+    }],
+    yAxis: [{
+    type: 'value',
+    axisLabel: {
+       //formatter: '{value} %'
+        show:true,
+         textStyle: {
+                 color: "#d5110d",
+                fontSize: '12',
+            },
+    },
+    axisTick: {
+        show: false,
+    },
+    axisLine: {
+        show: true,
+        lineStyle: {
+            color: "#15d57a",
+            width: 1,
+            type: "solid"
+        },
+    },
+    splitLine: {
+        lineStyle: {
+           color: "rgba(255,255,255,.1)",
+        }
+    }
+    }],
+    series: [
+    {
+    type: 'bar',
+    {#data: [#}
+    {#    ('湖北', 300),#}
+    {#    ('广东', 250),#}
+    {#    ('浙江', 200),#}
+    {#    ('河南', 150),#}
+    {#    ('湖南', 100)#}
+    {#],#}
+    data:[
+        {% for n, v in regionName|zip(regionData) %}
+        {value:{{ v }}, name:'{{ n }}'},
+        {% endfor %}
+    ],
+    barWidth:'35%', //柱子宽度
+    // barGap: 1, //柱子之间间距
+    itemStyle: {
+        normal: {
+            color:'#10d57b',
+            opacity: 1,
+            barBorderRadius: 5,
+        }
+    },
+    label: {
+    		show: true, //开启显示
+    		position: 'top', //在上方显示
+    		textStyle: { //数值样式
+    		    color: 'black',
+    			fontSize: 10,
+    			fontWeight: 600
+    			}
+    		},
+    }
+
+    ]
+    };
+
+    {#the following is map #}
+    var optionMap = {
+                backgroundColor: '#FFFFFF',
+                title: {
+                    text: '国内各省新冠肺炎确诊人数（实时）',
+                    subtext: 'written by jankin',
+                    x:'center'
+                },
+                tooltip : {
+                    trigger: 'item'
+                },
+                grid: {
+                    left: '5%',
+                    top:'10%',
+                    right: '5%',
+                    bottom: '10%',
+                    containLabel: true
+                },
+
+                //左侧小导航图标
+                visualMap: {
+                            min: 10,
+                            max: 5000,
+                            text: ['High', 'Low'],
+                            realtime: false,
+                            calculable: true,
+                            inRange: {
+                                color: ['lightskyblue', 'yellow', 'orangered']
+                            }
+                        },
+
+                {#visualMap: {#}
+                {#    show : true,#}
+                {#    x: 'left',#}
+                {#    y: 'center',#}
+                {#    splitList: [#}
+                {#        {start: 500, end:600},{start: 400, end: 500},#}
+                {#        {start: 300, end: 400},{start: 200, end: 300},#}
+                {#        {start: 100, end: 200},{start: 0, end: 100},#}
+                {#    ],#}
+                {#    color: ['#5475f5', '#9feaa5', '#85daef','#74e2ca', '#e6ac53', '#9fb5ea']},#}
+
+
+                //配置属性
+                series: [{
+                    name: '数据',
+                    type: 'map',
+                    mapType: 'china',
+                    roam: true,
+                    label: {
+                        normal: {
+                            show: true  //省份名称
+                        },
+                        emphasis: {
+                            show: false
+                        }
+                    },
+                    data:[
+                        {% for n, v in cityName|zip(cityData) %}
+                        {value:{{ v }}, name:'{{ n }}'},
+                        {% endfor %}
+                    ]
+                }]
+            };
+
+    {#the following is pie#}
+    {#option_pie = {#}
+    {#        tooltip: {#}
+    {#            trigger: 'item',#}
+    {#            formatter: "{a} <br/>{b}: {c} ({d}%)"#}
+    {#        },#}
+    {#        legend: {#}
+    {#            orient: 'vertical',#}
+    {#            x: 'left',#}
+    {#            data: [ {% for p in ProductMName %}'{{ p }}', {% endfor %}]#}
+    {#        },#}
+    {#        series: [#}
+    {#                {#}
+    {#                    name: '科室名称',#}
+    {#                    type: 'pie',#}
+    {#                    radius: ['50%', '70%'],#}
+    {#                    avoidLabelOverlap: false,#}
+    {#                    label: {#}
+    {#                        normal: {#}
+    {#                            show: false,#}
+    {#                            position: 'center'#}
+    {#                        },#}
+    {#                        emphasis: {#}
+    {#                            show: true,#}
+    {#                            textStyle: {#}
+    {#                                fontSize: '30',#}
+    {#                                fontWeight: 'bold'#}
+    {#                            }#}
+    {#                        }#}
+    {#                    },#}
+    {#                    labelLine: {#}
+    {#                        normal: {#}
+    {#                            show: false#}
+    {#                        }#}
+    {#                    },#}
+    {#                    data:[#}
+    {#                        {% for n, v in categoryName|zip(categoryData) %}#}
+    {#                        {value:{{ v }}, name:'{{ n }}'},#}
+    {#                        {% endfor %}#}
+    {#                    ]#}
+    {#                },#}
+    {#        ]#}
+    {#    };#}
+
+        option_pie = {
+        title: {
+        text: '占比分析',
+        subtext: 'written by jankin',
+        left: 'center'
+    },
+    tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b}: <br/> {c} ({d}%)'
+    },
+    legend: {
+        left: 'center',
+        top: 'bottom',
+        data: [{% for p in categoryName %}'{{ p }}', {% endfor %}]
+    },
+    grid: {
+                left: '5%',
+                top:'10%',
+                right: '5%',
+                bottom: '10%',
+                containLabel: true
+            },
+    toolbox: {
+        show: false,
+        feature: {
+            mark: {show: true},
+            dataView: {show: true, readOnly: false},
+            magicType: {
+                show: true,
+                type: ['pie', 'funnel']
+            },
+            restore: {show: false},
+            saveAsImage: {show: false}
+        }
+    },
+    series: [
+        {
+            name: '面积模式',
+            type: 'pie',
+            radius: [40, 80],
+            center: ['50%', '50%'],
+            roseType: 'area',  //radius
+            label: {
+                show: true
+            },
+            emphasis: {
+                label: {
+                    show: true
+                }
+            },
+            data: [
+                {% for n, v in categoryName|zip(categoryData) %}
+                {value:{{ v }}, name:'{{ n }}'},
+                {% endfor %}
+            ],
+             itemStyle:{
+                normal:{
+                   label:{
+                      show: true,
+                      formatter: '{b} : \n {c} ({d}%)'
+                      },
+                      labelLine :{show:true}
+                      }
+                 },
+        },
+        {#{#}
+        {#    name: '面积模式',#}
+        {#    type: 'pie',#}
+        {#    radius: [30, 110],#}
+        {#    center: ['75%', '50%'],#}
+        {#    roseType: 'area',#}
+        {#    data: [#}
+        {#        {value: 10, name: 'rose1'},#}
+        {#        {value: 5, name: 'rose2'},#}
+        {#        {value: 15, name: 'rose3'},#}
+        {#        {value: 25, name: 'rose4'},#}
+        {#        {value: 20, name: 'rose5'},#}
+        {#        {value: 35, name: 'rose6'},#}
+        {#        {value: 30, name: 'rose7'},#}
+        {#        {value: 40, name: 'rose8'}#}
+        {#    ]#}
+        //}
+    ]
+    };
+
+    barchart.setOption(option_bar);
+    map.setOption(optionMap);
+    pie.setOption(option_pie);
+
+    </script>
+
+<style>
+    #dateTime{
+        position: absolute;
+        top: 5px;
+        left: 2%;
+        font-weight: bold;
+        background-color: #1096dc;
+        color: aliceblue;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+    .main{
+        display: flex;
+    }
+    #bar{
+        top: 5%;
+    }
+    #map{
+        top: 5%;
+    }
+    #pie{
+        {#//margin: 0 auto;#}
+        {#left: 1px;#}
+        {#right: 1px;#}
+        top: 5%;
+    }
+</style>
+
+</body>
+
+</html>

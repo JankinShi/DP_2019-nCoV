@@ -1,0 +1,417 @@
+*** Starting uWSGI 2.0.15-debian (64bit) on [Wed Feb 26 09:06:24 2020] ***
+compiled with version: 7.3.0 on 28 September 2018 15:41:15
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/jankin/code/web/dp_ncov
+detected binary path: /usr/bin/uwsgi-core
+dropping root privileges as early as possible
+chdir() to /home/ubuntu/jankin/code/web/dp_ncov
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/jankin/code/web/dp_ncov/uwsgi.sock fd 3
+dropping root privileges after socket binding
+dropping root privileges after plugin initialization
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1029750 bytes (1005 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+*** no app loaded. going in full dynamic mode ***
+dropping root privileges after application loading
+*** uWSGI is running in multiple interpreter mode ***
+!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
+no request plugin is loaded, you will not be able to manage requests.
+you may need to install the package for your language of choice, or simply load it with --plugin.
+!!!!!!!!!!! END OF WARNING !!!!!!!!!!
+spawned uWSGI master process (pid: 18535)
+spawned uWSGI worker 1 (pid: 18536, cores: 2)
+spawned uWSGI worker 2 (pid: 18537, cores: 2)
+spawned uWSGI worker 3 (pid: 18538, cores: 2)
+spawned uWSGI worker 4 (pid: 18539, cores: 2)
+probably another instance of uWSGI is running on the same address (127.0.0.1:9191).
+bind(): Address already in use [core/socket.c line 769]
+...brutally killing workers...
+Wed Feb 26 09:06:24 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Feb 26 09:06:24 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Feb 26 09:06:24 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Feb 26 09:06:24 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.15-debian (64bit) on [Wed Feb 26 10:11:16 2020] ***
+compiled with version: 7.3.0 on 28 September 2018 15:41:15
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/jankin/code/web/dp_ncov
+detected binary path: /usr/bin/uwsgi-core
+dropping root privileges as early as possible
+chdir() to /home/ubuntu/jankin/code/web/dp_ncov
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/jankin/code/web/dp_ncov/uwsgi.sock fd 3
+dropping root privileges after socket binding
+dropping root privileges after plugin initialization
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1029750 bytes (1005 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+*** no app loaded. going in full dynamic mode ***
+dropping root privileges after application loading
+*** uWSGI is running in multiple interpreter mode ***
+!!!!!!!!!!!!!! WARNING !!!!!!!!!!!!!!
+no request plugin is loaded, you will not be able to manage requests.
+you may need to install the package for your language of choice, or simply load it with --plugin.
+!!!!!!!!!!! END OF WARNING !!!!!!!!!!
+spawned uWSGI master process (pid: 27531)
+spawned uWSGI worker 1 (pid: 27532, cores: 2)
+spawned uWSGI worker 2 (pid: 27533, cores: 2)
+spawned uWSGI worker 3 (pid: 27534, cores: 2)
+spawned uWSGI worker 4 (pid: 27535, cores: 2)
+*** Stats server enabled on 127.0.0.1:9192 fd: 15 ***
+*** Starting uWSGI 2.0.15-debian (64bit) on [Wed Feb 26 10:13:40 2020] ***
+compiled with version: 7.3.0 on 28 September 2018 15:41:15
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/jankin/code/web/dp_ncov
+detected binary path: /usr/bin/uwsgi-core
+dropping root privileges as early as possible
+chdir() to /home/ubuntu/jankin/code/web/dp_ncov
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/jankin/code/web/dp_ncov/uwsgi.sock fd 3
+dropping root privileges after socket binding
+Python version: 2.7.17 (default, Nov  7 2019, 10:07:09)  [GCC 7.4.0]
+Set PythonHome to /home/ubuntu/jankin/software/python/venvs/python36_venv
+ImportError: No module named site
+*** Starting uWSGI 2.0.15-debian (64bit) on [Wed Feb 26 10:16:13 2020] ***
+compiled with version: 7.3.0 on 28 September 2018 15:41:15
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/jankin/code/web/dp_ncov
+detected binary path: /usr/bin/uwsgi-core
+dropping root privileges as early as possible
+chdir() to /home/ubuntu/jankin/code/web/dp_ncov
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/jankin/code/web/dp_ncov/uwsgi.sock fd 3
+dropping root privileges after socket binding
+Python version: 2.7.17 (default, Nov  7 2019, 10:07:09)  [GCC 7.4.0]
+Set PythonHome to /home/ubuntu/jankin/software/python/venvs/python36_venv
+ImportError: No module named site
+*** Starting uWSGI 2.0.15-debian (64bit) on [Wed Feb 26 10:18:41 2020] ***
+compiled with version: 7.3.0 on 28 September 2018 15:41:15
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/jankin/code/web/dp_ncov
+detected binary path: /usr/bin/uwsgi-core
+dropping root privileges as early as possible
+chdir() to /home/ubuntu/jankin/code/web/dp_ncov
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/jankin/code/web/dp_ncov/uwsgi.sock fd 3
+dropping root privileges after socket binding
+Python version: 2.7.17 (default, Nov  7 2019, 10:07:09)  [GCC 7.4.0]
+Set PythonHome to /home/ubuntu/jankin/software/python/venvs/python36_venv
+ImportError: No module named site
+Wed Feb 26 10:21:19 2020 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Feb 26 10:21:19 2020 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Feb 26 10:21:19 2020 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Feb 26 10:21:19 2020 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.15-debian (64bit) on [Wed Feb 26 10:21:28 2020] ***
+compiled with version: 7.3.0 on 28 September 2018 15:41:15
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/jankin/code/web/dp_ncov
+detected binary path: /usr/bin/uwsgi-core
+dropping root privileges as early as possible
+chdir() to /home/ubuntu/jankin/code/web/dp_ncov
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ubuntu/jankin/code/web/dp_ncov/uwsgi.sock fd 3
+dropping root privileges after socket binding
+Python version: 2.7.17 (default, Nov  7 2019, 10:07:09)  [GCC 7.4.0]
+Set PythonHome to /home/ubuntu/jankin/software/python/venvs/python36_venv
+ImportError: No module named site
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 10:31:50 2020] ***
+compiled with version: 7.4.0 on 14 January 2020 16:02:41
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/jankin/code/web/dp_ncov
+detected binary path: /home/ubuntu/jankin/software/python/venvs/python36_venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/jankin/code/web/dp_ncov
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8111 fd 3
+uwsgi socket 0 bound to UNIX address /home/ubuntu/jankin/code/web/dp_ncov/uwsgi.sock fd 6
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Set PythonHome to /home/ubuntu/jankin/software/python/venvs/python36_venv
+Python main interpreter initialized at 0x5633af3fec70
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031110 bytes (1006 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5633af3fec70 pid: 30528 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 30528)
+spawned uWSGI worker 1 (pid: 30530, cores: 2)
+spawned uWSGI worker 2 (pid: 30531, cores: 2)
+spawned uWSGI worker 3 (pid: 30532, cores: 2)
+spawned uWSGI worker 4 (pid: 30533, cores: 2)
+*** Stats server enabled on 127.0.0.1:9192 fd: 18 ***
+spawned uWSGI http 1 (pid: 30534)
+[pid: 30531|app: 0|req: 1/1] 112.32.64.96 () {38 vars in 729 bytes} [Wed Feb 26 10:31:54 2020] GET / => generated 186 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 221 bytes (1 switches on core 0)
+[pid: 30530|app: 0|req: 1/2] 112.32.64.96 () {36 vars in 612 bytes} [Wed Feb 26 10:31:55 2020] GET /echarts.min.js => generated 232 bytes in 4 msecs (HTTP/1.1 404) 5 headers in 213 bytes (1 switches on core 0)
+[pid: 30530|app: 0|req: 2/3] 112.32.64.96 () {36 vars in 708 bytes} [Wed Feb 26 10:34:32 2020] GET /index => generated 11691 bytes in 2236 msecs (HTTP/1.1 200) 5 headers in 223 bytes (1 switches on core 1)
+[pid: 30531|app: 0|req: 2/4] 112.32.64.96 () {36 vars in 619 bytes} [Wed Feb 26 10:34:34 2020] GET /static/china.js => generated 61827 bytes in 4 msecs via sendfile() (HTTP/1.1 200) 11 headers in 464 bytes (0 switches on core 1)
+[pid: 30530|app: 0|req: 3/5] 112.32.64.96 () {36 vars in 623 bytes} [Wed Feb 26 10:34:34 2020] GET /static/echarts.js => generated 2893121 bytes in 21650 msecs via sendfile() (HTTP/1.1 200) 11 headers in 468 bytes (11 switches on core 0)
+[pid: 30530|app: 0|req: 4/6] 112.32.64.96 () {32 vars in 566 bytes} [Wed Feb 26 10:34:58 2020] GET /static/echarts.js.map => generated 232 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 213 bytes (2 switches on core 1)
+[pid: 30530|app: 0|req: 5/7] 49.234.72.130 () {36 vars in 693 bytes} [Wed Feb 26 10:35:10 2020] GET /index => generated 11691 bytes in 2141 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 0)
+[pid: 30533|app: 0|req: 1/8] 49.234.72.130 () {36 vars in 604 bytes} [Wed Feb 26 10:35:13 2020] GET /static/china.js => generated 61827 bytes in 5 msecs via sendfile() (HTTP/1.0 200) 11 headers in 464 bytes (0 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 6/9] 49.234.72.130 () {36 vars in 608 bytes} [Wed Feb 26 10:35:13 2020] GET /static/echarts.js => generated 0 bytes in 4005 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 1)
+[pid: 30530|app: 0|req: 7/10] 49.234.72.130 () {36 vars in 632 bytes} [Wed Feb 26 10:35:18 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (2 switches on core 0)
+[pid: 30530|app: 0|req: 8/11] 49.234.72.130 () {38 vars in 724 bytes} [Wed Feb 26 10:35:37 2020] GET /index => generated 11691 bytes in 1961 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 1)
+[pid: 30530|app: 0|req: 9/12] 49.234.72.130 () {40 vars in 697 bytes} [Wed Feb 26 10:35:40 2020] GET /static/echarts.js => generated 1 bytes in 1 msecs (HTTP/1.0 206) 12 headers in 519 bytes (1 switches on core 0)
+[pid: 30533|app: 0|req: 2/13] 49.234.72.130 () {40 vars in 698 bytes} [Wed Feb 26 10:35:40 2020] GET /static/echarts.js => generated 2614593 bytes in 41780 msecs (HTTP/1.0 206) 12 headers in 526 bytes (83824 switches on core 1)
+[pid: 30530|app: 0|req: 10/14] 49.234.72.130 () {32 vars in 551 bytes} [Wed Feb 26 10:36:22 2020] GET /static/echarts.js.map => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 10:39:14 2020] ***
+compiled with version: 7.4.0 on 14 January 2020 16:02:41
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-11-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/jankin/code/web/dp_ncov
+detected binary path: /home/ubuntu/jankin/software/python/venvs/python36_venv/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/jankin/code/web/dp_ncov
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (0.0.0.0:8111).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 30530|app: 0|req: 11/15] 49.234.72.130 () {38 vars in 724 bytes} [Wed Feb 26 10:39:17 2020] GET /index => generated 11716 bytes in 2047 msecs (HTTP/1.0 200) 5 headers in 223 bytes (1 switches on core 1)
+[pid: 30530|app: 0|req: 12/16] 49.234.72.130 () {32 vars in 551 bytes} [Wed Feb 26 10:39:24 2020] GET /static/echarts.js.map => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (1 switches on core 0)
+[pid: 30532|app: 0|req: 1/17] 49.234.72.130 () {36 vars in 693 bytes} [Wed Feb 26 10:40:36 2020] GET /index => generated 11716 bytes in 2002 msecs (HTTP/1.0 200) 5 headers in 223 bytes (1 switches on core 0)
+[pid: 30530|app: 0|req: 13/18] 49.234.72.130 () {36 vars in 616 bytes} [Wed Feb 26 10:42:02 2020] GET /index => generated 11716 bytes in 2196 msecs (HTTP/1.0 200) 5 headers in 223 bytes (1 switches on core 0)
+[pid: 30532|app: 0|req: 2/19] 49.234.72.130 () {36 vars in 588 bytes} [Wed Feb 26 10:42:04 2020] GET /static/china.js => generated 61827 bytes in 3 msecs via sendfile() (HTTP/1.0 200) 11 headers in 464 bytes (0 switches on core 1)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 14/20] 49.234.72.130 () {36 vars in 592 bytes} [Wed Feb 26 10:42:04 2020] GET /static/echarts.js => generated 0 bytes in 4003 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 1)
+[pid: 30532|app: 0|req: 3/21] 49.234.72.130 () {36 vars in 579 bytes} [Wed Feb 26 10:42:10 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (2 switches on core 0)
+[pid: 30533|app: 0|req: 3/22] 49.234.72.130 () {36 vars in 615 bytes} [Wed Feb 26 10:42:29 2020] GET /index => generated 11716 bytes in 2046 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 15/23] 49.234.72.130 () {36 vars in 591 bytes} [Wed Feb 26 10:42:31 2020] GET /static/echarts.js => generated 0 bytes in 7365 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (2 switches on core 0)
+[pid: 30530|app: 0|req: 16/24] 49.234.72.130 () {42 vars in 719 bytes} [Wed Feb 26 10:43:32 2020] GET /index => generated 11716 bytes in 2074 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 1)
+[pid: 30530|app: 0|req: 17/25] 49.234.72.130 () {44 vars in 786 bytes} [Wed Feb 26 10:43:34 2020] GET /static/china.js => generated 61827 bytes in 2 msecs via sendfile() (HTTP/1.0 200) 11 headers in 464 bytes (0 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30533|app: 0|req: 4/26] 49.234.72.130 () {44 vars in 790 bytes} [Wed Feb 26 10:43:34 2020] GET /static/echarts.js => generated 0 bytes in 4005 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 1)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30532|app: 0|req: 4/27] 49.234.72.130 () {36 vars in 594 bytes} [Wed Feb 26 10:43:40 2020] GET /static/echarts.js => generated 0 bytes in 7353 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (3 switches on core 1)
+[pid: 30530|app: 0|req: 18/28] 49.234.72.130 () {34 vars in 477 bytes} [Wed Feb 26 10:43:49 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (2 switches on core 0)
+[pid: 30530|app: 0|req: 19/29] 49.234.72.130 () {36 vars in 646 bytes} [Wed Feb 26 10:43:58 2020] GET /index => generated 11716 bytes in 2044 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 1)
+[pid: 30532|app: 0|req: 5/30] 49.234.72.130 () {36 vars in 618 bytes} [Wed Feb 26 10:44:00 2020] GET /static/china.js => generated 61827 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 11 headers in 464 bytes (0 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 20/31] 49.234.72.130 () {36 vars in 622 bytes} [Wed Feb 26 10:44:00 2020] GET /static/echarts.js => generated 0 bytes in 4002 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 0)
+[pid: 30532|app: 0|req: 6/32] 49.234.72.130 () {34 vars in 507 bytes} [Wed Feb 26 10:44:06 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (2 switches on core 0)
+[pid: 30532|app: 0|req: 7/33] 49.234.72.130 () {38 vars in 677 bytes} [Wed Feb 26 10:44:17 2020] GET /index => generated 11716 bytes in 2042 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 1)
+[pid: 30531|app: 0|req: 3/34] 49.234.72.130 () {42 vars in 763 bytes} [Wed Feb 26 10:44:19 2020] GET /static/china.js => generated 0 bytes in 1 msecs (HTTP/1.0 304) 8 headers in 352 bytes (0 switches on core 0)
+[uwsgi-http key: dp_ncov client_addr: 49.234.72.130 client_port: 44775] hr_write(): Broken pipe [plugins/http/http.c line 565]
+Wed Feb 26 10:44:42 2020 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 429] during GET /static/echarts.js (49.234.72.130)
+OSError: write error
+[pid: 30530|app: 0|req: 21/35] 49.234.72.130 () {42 vars in 736 bytes} [Wed Feb 26 10:44:19 2020] GET /static/echarts.js => generated 1400597 bytes in 22285 msecs (HTTP/1.0 206) 12 headers in 526 bytes (45385 switches on core 1)
+[pid: 30531|app: 0|req: 4/36] 49.234.72.130 () {38 vars in 677 bytes} [Wed Feb 26 10:44:42 2020] GET /index => generated 11716 bytes in 2903 msecs (HTTP/1.0 200) 5 headers in 223 bytes (1 switches on core 1)
+[pid: 30530|app: 0|req: 22/37] 49.234.72.130 () {42 vars in 763 bytes} [Wed Feb 26 10:44:45 2020] GET /static/china.js => generated 0 bytes in 1 msecs (HTTP/1.0 304) 8 headers in 352 bytes (0 switches on core 0)
+[pid: 30533|app: 0|req: 5/38] 49.234.72.130 () {42 vars in 737 bytes} [Wed Feb 26 10:44:45 2020] GET /static/echarts.js => generated 1222479 bytes in 18891 msecs (HTTP/1.0 206) 12 headers in 527 bytes (38480 switches on core 0)
+[pid: 30530|app: 0|req: 23/39] 49.234.72.130 () {34 vars in 583 bytes} [Wed Feb 26 10:45:06 2020] GET /static/echarts.js.map => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (2 switches on core 1)
+[pid: 30530|app: 0|req: 24/40] 49.234.72.130 () {34 vars in 583 bytes} [Wed Feb 26 10:45:06 2020] GET /static/echarts.js.map => generated 232 bytes in 3 msecs (HTTP/1.0 404) 5 headers in 213 bytes (2 switches on core 0)
+[pid: 30533|app: 0|req: 6/41] 49.234.72.130 () {34 vars in 507 bytes} [Wed Feb 26 10:45:06 2020] GET /favicon.ico => generated 232 bytes in 2 msecs (HTTP/1.0 404) 5 headers in 213 bytes (2 switches on core 1)
+[pid: 30532|app: 0|req: 8/42] 49.234.72.130 () {36 vars in 618 bytes} [Wed Feb 26 10:45:09 2020] GET /index => generated 11716 bytes in 1952 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 25/43] 49.234.72.130 () {36 vars in 594 bytes} [Wed Feb 26 10:45:12 2020] GET /static/echarts.js => generated 0 bytes in 4005 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 1)
+[pid: 30530|app: 0|req: 26/44] 49.234.72.130 () {34 vars in 475 bytes} [Wed Feb 26 10:45:17 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (2 switches on core 0)
+[pid: 30531|app: 0|req: 5/45] 49.234.72.130 () {36 vars in 617 bytes} [Wed Feb 26 10:45:26 2020] GET /index => generated 11716 bytes in 2157 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 27/46] 49.234.72.130 () {36 vars in 593 bytes} [Wed Feb 26 10:45:29 2020] GET /static/echarts.js => generated 0 bytes in 4006 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 1)
+[pid: 30530|app: 0|req: 28/47] 49.234.72.130 () {34 vars in 476 bytes} [Wed Feb 26 10:45:33 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (2 switches on core 0)
+[pid: 30531|app: 0|req: 6/48] 49.234.72.130 () {36 vars in 587 bytes} [Wed Feb 26 10:46:30 2020] GET /index => generated 11716 bytes in 2120 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 1)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 29/49] 49.234.72.130 () {36 vars in 563 bytes} [Wed Feb 26 10:46:32 2020] GET /static/echarts.js => generated 0 bytes in 4006 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 1)
+[pid: 30530|app: 0|req: 31/50] 49.234.72.130 () {34 vars in 477 bytes} [Wed Feb 26 10:46:39 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (1 switches on core 1)
+[pid: 30530|app: 0|req: 31/51] 49.234.72.130 () {36 vars in 587 bytes} [Wed Feb 26 10:46:36 2020] GET /index => generated 11716 bytes in 3560 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 32/52] 49.234.72.130 () {36 vars in 563 bytes} [Wed Feb 26 10:46:40 2020] GET /static/echarts.js => generated 0 bytes in 4006 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 1)
+[pid: 30533|app: 0|req: 7/53] 49.234.72.130 () {34 vars in 477 bytes} [Wed Feb 26 10:46:45 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (2 switches on core 1)
+[pid: 30532|app: 0|req: 9/54] 49.234.72.130 () {36 vars in 587 bytes} [Wed Feb 26 10:46:52 2020] GET /index => generated 11716 bytes in 2030 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 1)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 33/55] 49.234.72.130 () {36 vars in 563 bytes} [Wed Feb 26 10:46:54 2020] GET /static/echarts.js => generated 0 bytes in 4004 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 0)
+[pid: 30530|app: 0|req: 34/56] 49.234.72.130 () {34 vars in 477 bytes} [Wed Feb 26 10:46:59 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (2 switches on core 1)
+[pid: 30532|app: 0|req: 10/57] 49.234.72.130 () {36 vars in 618 bytes} [Wed Feb 26 10:47:14 2020] GET /index => generated 11716 bytes in 2069 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 0)
+[uwsgi-http key: dp_ncov client_addr: 49.234.72.130 client_port: 41192] hr_write(): Broken pipe [plugins/http/http.c line 565]
+Wed Feb 26 10:47:17 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+Wed Feb 26 10:47:17 2020 - uwsgi_response_sendfile_do(): Broken pipe [core/writer.c line 655] during GET /static/echarts.js (49.234.72.130)
+OSError: write error
+[pid: 30530|app: 0|req: 35/58] 49.234.72.130 () {36 vars in 594 bytes} [Wed Feb 26 10:47:17 2020] GET /static/echarts.js => generated 0 bytes in 434 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 0)
+Wed Feb 26 10:47:23 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+Wed Feb 26 10:47:23 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /index (49.234.72.130)
+OSError: write error
+[pid: 30533|app: 0|req: 8/59] 49.234.72.130 () {36 vars in 616 bytes} [Wed Feb 26 10:47:18 2020] GET /index => generated 0 bytes in 4713 msecs (HTTP/1.0 200) 5 headers in 0 bytes (0 switches on core 0)
+[pid: 30530|app: 0|req: 36/60] 49.234.72.130 () {36 vars in 616 bytes} [Wed Feb 26 10:47:19 2020] GET /index => generated 11716 bytes in 4790 msecs (HTTP/1.0 200) 5 headers in 223 bytes (1 switches on core 1)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 37/61] 49.234.72.130 () {36 vars in 592 bytes} [Wed Feb 26 10:47:23 2020] GET /static/echarts.js => generated 0 bytes in 4005 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 0)
+[pid: 30533|app: 0|req: 9/62] 49.234.72.130 () {32 vars in 551 bytes} [Wed Feb 26 10:47:54 2020] GET /static/echarts.js.map => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (2 switches on core 1)
+[pid: 30532|app: 0|req: 11/63] 49.234.72.130 () {38 vars in 724 bytes} [Wed Feb 26 10:48:09 2020] GET /index => generated 11716 bytes in 1955 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 1)
+[pid: 30530|app: 0|req: 38/64] 49.234.72.130 () {32 vars in 551 bytes} [Wed Feb 26 10:48:11 2020] GET /static/echarts.js.map => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (1 switches on core 1)
+[pid: 30530|app: 0|req: 39/65] 49.234.72.130 () {36 vars in 1149 bytes} [Wed Feb 26 10:59:08 2020] GET /index?nsukey=GC7XklkGxUb%2Ffg2%2FDtog4%2BEOJP%2BexBHwMkffIiirGtAjheel79wRQJWRKtHGVPNxyq29CcBybRUbAt%2B5J3tUivJGj%2F4dDITLDYFlzUGlyiOgF9ZJyrXsLyc%2BJzcYZZCf1ZrxaCsmds6yu%2FfV6id4rX%2FZBHYQYQY4mKl0Zszbjg7icya785lKN4ysnSO8713Hs8%2FYzrYD1mWc8Z%2B8Lh3QSQ%3D%3D => generated 11716 bytes in 2227 msecs (HTTP/1.0 200) 5 headers in 223 bytes (1 switches on core 0)
+[pid: 30532|app: 0|req: 12/66] 49.234.72.130 () {36 vars in 872 bytes} [Wed Feb 26 10:59:10 2020] GET /static/china.js => generated 61827 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 11 headers in 464 bytes (0 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 40/67] 49.234.72.130 () {36 vars in 876 bytes} [Wed Feb 26 10:59:10 2020] GET /static/echarts.js => generated 0 bytes in 4005 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 1)
+[pid: 30533|app: 0|req: 10/68] 49.234.72.130 () {36 vars in 1125 bytes} [Wed Feb 26 10:59:54 2020] GET /index?nsukey=3V%2FlZwklCI%2FWTTIRedtCU1fbYDUV8lbaG%2Bw9wm04HvlFzAbMtn5cKRWLFKvkv484ta72UsYXL4hKshwwafQBHzDUh2SCmTjkoJJfn3u7e6k9OBYFnzHsfC5Ym9EHssLMknXiUDs9%2Fe7NttQQHHfqzKnArG8g1Dq6vwoFb%2B7SkbXUKOAQi7UwPQE4PhBJrzM9pNhJJMpU9MLQUhCHS4ef8w%3D%3D => generated 11716 bytes in 2147 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 41/69] 49.234.72.130 () {36 vars in 864 bytes} [Wed Feb 26 10:59:56 2020] GET /static/echarts.js => generated 0 bytes in 4006 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 0)
+[pid: 30530|app: 0|req: 42/70] 49.234.72.130 () {36 vars in 1117 bytes} [Wed Feb 26 11:00:03 2020] GET /index?nsukey=nA0aSzR6RGyf5lJwmMiDrGiSzemBhtJireV4lwKIcfb5mfOVV8qoAdGXh18TDDtpAQNdTHKTJZS2FjQMQV3jIVFa5AOAzZtanetcRLDF6de3dzYyPWTbyxqY1vn7Qnh58OEIStd7sABazgP1PMTelX15nJ4iN0NFhqt%2FRB7dVGB9uk%2BxMZU7KNhJB%2BTJ4xkXMU6TxetZCFjTV9vV8Ne6vQ%3D%3D => generated 11716 bytes in 2087 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 1)
+[pid: 30533|app: 0|req: 11/71] 49.234.72.130 () {36 vars in 856 bytes} [Wed Feb 26 11:00:05 2020] GET /static/china.js => generated 61827 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 11 headers in 464 bytes (0 switches on core 1)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 43/72] 49.234.72.130 () {36 vars in 860 bytes} [Wed Feb 26 11:00:05 2020] GET /static/echarts.js => generated 0 bytes in 4005 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 0)
+[pid: 30532|app: 0|req: 13/73] 49.234.72.130 () {32 vars in 1000 bytes} [Wed Feb 26 11:01:11 2020] GET /index?nsukey=nA0aSzR6RGyf5lJwmMiDrGiSzemBhtJireV4lwKIcfb5mfOVV8qoAdGXh18TDDtpAQNdTHKTJZS2FjQMQV3jIVFa5AOAzZtanetcRLDF6de3dzYyPWTbyxqY1vn7Qnh58OEIStd7sABazgP1PMTelX15nJ4iN0NFhqt%2FRB7dVGB9uk%2BxMZU7KNhJB%2BTJ4xkXMU6TxetZCFjTV9vV8Ne6vQ%3D%3D => generated 11716 bytes in 1991 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 0)
+[pid: 30530|app: 0|req: 44/74] 49.234.72.130 () {34 vars in 884 bytes} [Wed Feb 26 11:01:24 2020] GET /static/echarts.js => generated 2893121 bytes in 25362 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (10 switches on core 1)
+[pid: 30530|app: 0|req: 45/75] 49.234.72.130 () {34 vars in 830 bytes} [Wed Feb 26 11:02:06 2020] GET /static/china.js => generated 61827 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 11 headers in 464 bytes (1 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 46/76] 49.234.72.130 () {36 vars in 592 bytes} [Wed Feb 26 11:05:08 2020] GET /static/echarts.js => generated 0 bytes in 5961 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (2 switches on core 1)
+[pid: 30530|app: 0|req: 47/77] 49.234.72.130 () {42 vars in 866 bytes} [Wed Feb 26 11:06:43 2020] GET /index => generated 11716 bytes in 1971 msecs (HTTP/1.0 200) 5 headers in 223 bytes (1 switches on core 0)
+[pid: 30533|app: 0|req: 12/78] 49.234.72.130 () {36 vars in 697 bytes} [Wed Feb 26 11:06:45 2020] GET /static/china.js => generated 61827 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 11 headers in 464 bytes (0 switches on core 1)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 48/79] 49.234.72.130 () {36 vars in 701 bytes} [Wed Feb 26 11:06:45 2020] GET /static/echarts.js => generated 0 bytes in 4003 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 1)
+[pid: 30533|app: 0|req: 13/80] 49.234.72.130 () {42 vars in 866 bytes} [Wed Feb 26 11:06:56 2020] GET /index => generated 11716 bytes in 2146 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 1)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 49/81] 49.234.72.130 () {36 vars in 701 bytes} [Wed Feb 26 11:06:58 2020] GET /static/echarts.js => generated 0 bytes in 7561 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (2 switches on core 0)
+[pid: 30530|app: 0|req: 50/82] 49.234.72.130 () {38 vars in 724 bytes} [Wed Feb 26 11:13:38 2020] GET /index => generated 11716 bytes in 1980 msecs (HTTP/1.0 200) 5 headers in 223 bytes (1 switches on core 1)
+[pid: 30530|app: 0|req: 51/83] 49.234.72.130 () {32 vars in 551 bytes} [Wed Feb 26 11:13:41 2020] GET /static/echarts.js.map => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (1 switches on core 0)
+[pid: 30532|app: 0|req: 14/84] 49.234.72.130 () {36 vars in 606 bytes} [Wed Feb 26 11:13:58 2020] GET / => generated 186 bytes in 2 msecs (HTTP/1.0 200) 5 headers in 221 bytes (1 switches on core 1)
+[pid: 30531|app: 0|req: 7/85] 49.234.72.130 () {36 vars in 581 bytes} [Wed Feb 26 11:13:58 2020] GET /echarts.min.js => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (1 switches on core 0)
+[pid: 30531|app: 0|req: 8/86] 49.234.72.130 () {36 vars in 575 bytes} [Wed Feb 26 11:13:58 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (1 switches on core 1)
+[pid: 30532|app: 0|req: 15/87] 49.234.72.130 () {36 vars in 606 bytes} [Wed Feb 26 11:14:15 2020] GET / => generated 186 bytes in 1 msecs (HTTP/1.0 200) 5 headers in 221 bytes (1 switches on core 0)
+[pid: 30533|app: 0|req: 14/88] 49.234.72.130 () {36 vars in 581 bytes} [Wed Feb 26 11:14:15 2020] GET /echarts.min.js => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (2 switches on core 0)
+[pid: 30533|app: 0|req: 15/89] 49.234.72.130 () {36 vars in 616 bytes} [Wed Feb 26 11:14:17 2020] GET /index => generated 11716 bytes in 2023 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 1)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 52/90] 49.234.72.130 () {36 vars in 592 bytes} [Wed Feb 26 11:14:20 2020] GET /static/echarts.js => generated 0 bytes in 7348 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (2 switches on core 0)
+[pid: 30531|app: 0|req: 9/91] 49.234.72.130 () {36 vars in 606 bytes} [Wed Feb 26 11:14:53 2020] GET / => generated 186 bytes in 1 msecs (HTTP/1.0 200) 5 headers in 221 bytes (1 switches on core 1)
+[pid: 30533|app: 0|req: 16/92] 49.234.72.130 () {36 vars in 581 bytes} [Wed Feb 26 11:14:53 2020] GET /echarts.min.js => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (1 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 54/93] 49.234.72.130 () {36 vars in 592 bytes} [Wed Feb 26 11:14:52 2020] GET /static/echarts.js => generated 0 bytes in 6059 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (3 switches on core 0)
+Wed Feb 26 11:15:04 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /index (49.234.72.130)
+OSError: write error
+[pid: 30530|app: 0|req: 55/94] 49.234.72.130 () {36 vars in 616 bytes} [Wed Feb 26 11:14:52 2020] GET /index => generated 0 bytes in 11905 msecs (HTTP/1.0 200) 5 headers in 0 bytes (1 switches on core 1)
+Wed Feb 26 11:15:07 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+Wed Feb 26 11:15:07 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /index (49.234.72.130)
+OSError: write error
+[pid: 30532|app: 0|req: 16/95] 49.234.72.130 () {36 vars in 616 bytes} [Wed Feb 26 11:14:53 2020] GET /index => generated 0 bytes in 13618 msecs (HTTP/1.0 200) 5 headers in 0 bytes (1 switches on core 0)
+[pid: 30530|app: 0|req: 55/96] 112.32.64.96 () {36 vars in 631 bytes} [Wed Feb 26 11:15:00 2020] GET /index => generated 11716 bytes in 8500 msecs (HTTP/1.1 200) 5 headers in 223 bytes (2 switches on core 0)
+[pid: 30532|app: 0|req: 17/97] 112.32.64.96 () {36 vars in 603 bytes} [Wed Feb 26 11:15:09 2020] GET /static/china.js => generated 61827 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 11 headers in 464 bytes (0 switches on core 1)
+[pid: 30530|app: 0|req: 56/98] 112.32.64.96 () {36 vars in 607 bytes} [Wed Feb 26 11:15:09 2020] GET /static/echarts.js => generated 2893121 bytes in 22597 msecs via sendfile() (HTTP/1.1 200) 11 headers in 468 bytes (10 switches on core 1)
+[pid: 30530|app: 0|req: 57/99] 112.32.64.96 () {36 vars in 595 bytes} [Wed Feb 26 11:15:33 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 213 bytes (2 switches on core 0)
+[pid: 30530|app: 0|req: 58/100] 112.32.64.96 () {36 vars in 708 bytes} [Wed Feb 26 11:16:25 2020] GET /index => generated 11716 bytes in 2094 msecs (HTTP/1.1 200) 5 headers in 223 bytes (2 switches on core 1)
+[pid: 30530|app: 0|req: 59/101] 112.32.64.96 () {42 vars in 881 bytes} [Wed Feb 26 11:16:48 2020] GET /index => generated 11716 bytes in 2005 msecs (HTTP/1.1 200) 5 headers in 223 bytes (1 switches on core 0)
+[pid: 30532|app: 0|req: 18/102] 112.32.64.96 () {36 vars in 712 bytes} [Wed Feb 26 11:16:50 2020] GET /static/china.js => generated 61827 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 11 headers in 464 bytes (0 switches on core 0)
+[pid: 30530|app: 0|req: 60/103] 112.32.64.96 () {36 vars in 716 bytes} [Wed Feb 26 11:16:50 2020] GET /static/echarts.js => generated 2893121 bytes in 22658 msecs via sendfile() (HTTP/1.1 200) 11 headers in 468 bytes (10 switches on core 1)
+[pid: 30530|app: 0|req: 61/104] 49.234.72.130 () {36 vars in 843 bytes} [Wed Feb 26 11:17:23 2020] GET /index => generated 11716 bytes in 2149 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 0)
+[pid: 30532|app: 0|req: 19/105] 49.234.72.130 () {36 vars in 759 bytes} [Wed Feb 26 11:17:26 2020] GET /static/china.js => generated 61827 bytes in 1 msecs via sendfile() (HTTP/1.0 200) 11 headers in 464 bytes (0 switches on core 1)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 62/106] 49.234.72.130 () {36 vars in 763 bytes} [Wed Feb 26 11:17:26 2020] GET /static/echarts.js => generated 0 bytes in 4002 msecs via sendfile() (HTTP/1.0 200) 11 headers in 468 bytes (1 switches on core 1)
+[pid: 30531|app: 0|req: 10/107] 49.234.72.130 () {36 vars in 810 bytes} [Wed Feb 26 11:17:32 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (2 switches on core 1)
+[pid: 30532|app: 0|req: 20/108] 49.234.72.130 () {36 vars in 843 bytes} [Wed Feb 26 11:17:47 2020] GET /index => generated 11716 bytes in 2201 msecs (HTTP/1.0 200) 5 headers in 223 bytes (2 switches on core 0)
+[pid: 30530|app: 0|req: 63/109] 49.234.72.130 () {40 vars in 852 bytes} [Wed Feb 26 11:17:49 2020] GET /static/echarts.js => generated 1 bytes in 1 msecs (HTTP/1.0 206) 12 headers in 519 bytes (1 switches on core 0)
+[pid: 30533|app: 0|req: 17/110] 49.234.72.130 () {40 vars in 853 bytes} [Wed Feb 26 11:17:49 2020] GET /static/echarts.js => generated 2585921 bytes in 41312 msecs (HTTP/1.0 206) 12 headers in 526 bytes (82754 switches on core 0)
+[pid: 30530|app: 0|req: 64/111] 49.234.72.130 () {36 vars in 810 bytes} [Wed Feb 26 11:18:32 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 213 bytes (1 switches on core 1)
+[pid: 30531|app: 0|req: 11/112] 223.166.231.193 () {36 vars in 1135 bytes} [Wed Feb 26 11:18:37 2020] GET /index?nsukey=bJFsWndsUGJpLHHd4j6AL3CAnsOuBym%2FLzJ3i8CCPIR%2BsbxV2Hil8wbnJizl5WFzbfVtfnQ0IhDiqlXg4LyF12QB1vq954IFV4z3gYHHbVX9TkikJCtKenazyXrgncF8PF7wdiPHH1Kn0Mf70JPEpTKzXjFWK2arEdHAOhx2AEE6nTQnVGxKl7IbKpmH04W0jJOCh77K%2FTUrXLIyQcTYiA%3D%3D => generated 11716 bytes in 1990 msecs (HTTP/1.1 200) 5 headers in 223 bytes (1 switches on core 0)
+[pid: 30531|app: 0|req: 12/113] 223.166.231.193 () {36 vars in 874 bytes} [Wed Feb 26 11:18:39 2020] GET /static/china.js => generated 61827 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 11 headers in 464 bytes (0 switches on core 1)
+[pid: 30530|app: 0|req: 65/114] 223.166.231.193 () {36 vars in 878 bytes} [Wed Feb 26 11:18:39 2020] GET /static/echarts.js => generated 2893121 bytes in 22435 msecs via sendfile() (HTTP/1.1 200) 11 headers in 468 bytes (10 switches on core 0)
+[pid: 30530|app: 0|req: 67/115] 112.32.10.227 () {36 vars in 859 bytes} [Wed Feb 26 11:19:25 2020] GET /index => generated 11716 bytes in 2864 msecs (HTTP/1.1 200) 5 headers in 223 bytes (2 switches on core 1)
+[pid: 30531|app: 0|req: 13/116] 112.32.10.227 () {36 vars in 775 bytes} [Wed Feb 26 11:19:28 2020] GET /static/china.js => generated 61827 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 11 headers in 464 bytes (0 switches on core 1)
+Wed Feb 26 11:19:39 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+Wed Feb 26 11:19:39 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /index?nsukey=AXryQO2I%2BKqB3%2FCyBBQ7pTffjTB%2F1Rp%2FTmyASeqqvXNqI5rpur%2FGKawatxQIme8qg8%2BaUC95ljDsodClBL5BvuRTfzaAXOIyh3a4iWOBDmpHL9S4hD2RnszTCNhdfPTbBJZaeuzsvaxNAe%2F%2BWan3cR7f9cn6SterMVlKBoNGkGwelJxhHolXQKAAp0hAHH4EiAIjS%2BHKeFqZR8gZG0YVhw%3D%3D (223.166.231.193)
+OSError: write error
+[pid: 30530|app: 0|req: 67/117] 223.166.231.193 () {36 vars in 1159 bytes} [Wed Feb 26 11:19:26 2020] GET /index?nsukey=AXryQO2I%2BKqB3%2FCyBBQ7pTffjTB%2F1Rp%2FTmyASeqqvXNqI5rpur%2FGKawatxQIme8qg8%2BaUC95ljDsodClBL5BvuRTfzaAXOIyh3a4iWOBDmpHL9S4hD2RnszTCNhdfPTbBJZaeuzsvaxNAe%2F%2BWan3cR7f9cn6SterMVlKBoNGkGwelJxhHolXQKAAp0hAHH4EiAIjS%2BHKeFqZR8gZG0YVhw%3D%3D => generated 0 bytes in 12781 msecs (HTTP/1.1 200) 5 headers in 0 bytes (0 switches on core 0)
+[pid: 30533|app: 0|req: 18/118] 112.32.10.227 () {36 vars in 779 bytes} [Wed Feb 26 11:19:28 2020] GET /static/echarts.js => generated 2893121 bytes in 26579 msecs via sendfile() (HTTP/1.1 200) 11 headers in 468 bytes (10 switches on core 1)
+[pid: 30530|app: 0|req: 69/119] 112.32.10.227 () {36 vars in 826 bytes} [Wed Feb 26 11:19:56 2020] GET /favicon.ico => generated 232 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 213 bytes (2 switches on core 0)
+[pid: 30530|app: 0|req: 69/120] 101.91.62.65 () {32 vars in 1092 bytes} [Wed Feb 26 11:19:48 2020] GET /index?nsukey=RxFRXj%2FJ410I4LIutryniaC1nCLpfxC70UZ6SfzgfaIQOEEq67FjgHQIFZWiTPSg%2FT40q%2FxA5tNCfQb1%2FI9SRmIyddqgQAbxNvVi71OvI8lMSrY5NDxAL5rNvIw7BTpETcfcinxhpAUhZ4zZCuCjzMSmQFsuN7bVG1mwYRNzEskoPFtROzxpNlhEhgmp4bhSPdKNP%2Bi%2BEDFSI2N17viSaw%3D%3D => generated 11716 bytes in 9273 msecs (HTTP/1.1 200) 5 headers in 223 bytes (2 switches on core 1)
+[uwsgi-http key: 49.234.72.130:8111 client_addr: 101.91.62.65 client_port: 50634] hr_write(): Broken pipe [plugins/http/http.c line 565]
+Wed Feb 26 11:19:59 2020 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+Wed Feb 26 11:19:59 2020 - uwsgi_response_sendfile_do(): Broken pipe [core/writer.c line 655] during GET /static/echarts.js (101.91.62.65)
+OSError: write error
+[pid: 30530|app: 0|req: 70/121] 101.91.62.65 () {34 vars in 903 bytes} [Wed Feb 26 11:19:58 2020] GET /static/echarts.js => generated 0 bytes in 1212 msecs via sendfile() (HTTP/1.1 200) 11 headers in 468 bytes (2 switches on core 0)
+[pid: 30532|app: 0|req: 21/122] 101.91.62.65 () {34 vars in 920 bytes} [Wed Feb 26 11:19:59 2020] GET /static/china.js => generated 61827 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 11 headers in 464 bytes (1 switches on core 1)
+[pid: 30532|app: 0|req: 22/123] 120.204.17.73 () {32 vars in 579 bytes} [Wed Feb 26 11:20:10 2020] GET /index => generated 11716 bytes in 2495 msecs (HTTP/1.1 200) 5 headers in 223 bytes (2 switches on core 0)
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[pid: 30530|app: 0|req: 71/124] 120.204.17.73 () {34 vars in 614 bytes} [Wed Feb 26 11:20:15 2020] GET /static/echarts.js => generated 0 bytes in 4965 msecs via sendfile() (HTTP/1.1 200) 11 headers in 468 bytes (2 switches on core 1)
+[pid: 30530|app: 0|req: 72/125] 120.204.17.73 () {34 vars in 567 bytes} [Wed Feb 26 11:20:33 2020] GET /static/china.js => generated 61827 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 11 headers in 464 bytes (1 switches on core 0)
+[pid: 30530|app: 0|req: 73/126] 112.32.64.96 () {36 vars in 631 bytes} [Wed Feb 26 11:20:49 2020] GET /index => generated 11716 bytes in 2003 msecs (HTTP/1.1 200) 5 headers in 223 bytes (2 switches on core 1)
